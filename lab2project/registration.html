@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  .table_value {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    size: 34px;
+  }
+
+  .table {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+  }
+
+  .hrefs_table_sell {
+    border: 2px solid black;
+    padding: 5px 15px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .registration_section {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: cornflowerblue;
+  }
+
+  .checkbox {
+    margin-top: 20px;
+    transform: scale(1.3);
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  .round {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+  }
+
+  .leftdiv {
+    height: 90px;
+    position: relative;
+  }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+
+<section style="position: absolute; top: 0; width: 100%">
+  <table class="table">
+    <tr>
+      <td class="hrefs_table_sell">
+        <a class="table_value" href="main.html">Головна</a>
+      </td>
+      <td class="hrefs_table_sell">
+        <a class="table_value" href="registration.html">Форма реєстрації</a>
+      </td>
+      <td class="hrefs_table_sell">
+        <a class="table_value" href="login.html">Форма входу</a>
+      </td>
+      <td class="hrefs_table_sell">
+        <a class="table_value" href="feedback.html">Форма зворотнього зв'язку</a>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="registration_section">
+  <form>
+    <p style="font-size: 30px">Форма реєстрації</p>
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 50%; padding: 30px 30px 50px;font-size: 26px; text-align: center">
+          <div style="margin-right: auto; margin-left: 1px; margin-top: 30px">
+            <img src="avatar.jpg" class="round"></div>
+          <div>
+            <label style="font-size: 26px">Ім'я</label><br>
+            <input style="margin-top: 20px" type="text"><br>
+          </div>
+
+          <div style="margin-top: 20px">
+            <label style="top: 20px; font-size: 26px">Прізвище</label><br>
+            <input style="margin-top: 20px" type="text"><br>
+          </div>
+
+          <div style="margin-top: 20px">
+            <label style="font-size: 26px">Стать</label><br>
+
+            <input name="sex" style="margin-top: 20px; font-size: 20px; transform: scale(1.3);"
+                   type="radio"><label style="font-size: 20px">Чоловіча</label>
+
+            <input name="sex" style="margin-top: 20px; font-size: 20px; transform: scale(1.3);"
+                   type="radio"><label style="font-size: 20px">Жіноча</label>
+            <br>
+          </div>
+
+          <div style="margin-top: 20px">
+            <label style="font-size: 26px">Вік </label>
+            <input style="margin-top: 20px; height: 24px; font-size: 20px" value="20" type="number"><br>
+          </div>
+
+          <div style="margin-top: 20px">
+            <label style="font-size: 26px">Дата народження </label>
+            <input style="margin-top: 20px; height: 30px; font-size: 26px" type="date"><br>
+          </div>
+
+          <div class="leftdiv">
+            <button style="font-size: 20px; margin-top: 30px; padding: 5px 25px; position: absolute; bottom: 0; right: 0">
+              Зареєструватися
+            </button>
+          </div>
+        </td>
+        <td style="width: 50%; padding: 30px 30px 0px;font-size: 26px">
+          <div class="leftdiv">
+            <label>Країна проживання</label><br>
+            <select style="width: 190px; font-size: 20px">
+              <option>Україна</option>
+              <option>Росія</option>
+              <option>Білорусь</option>
+              <option>Польша</option>
+            </select><br>
+          </div>
+
+          <div class="leftdiv">
+            <label>Номер телефону</label><br>
+            <input style="font-size: 20px" type="tel" placeholder="+38(0XX)XXX-XX-XX"><br>
+          </div>
+
+          <div class="leftdiv">
+            <label>Соцмережа</label><br>
+            <input style="font-size: 20px" type="url" placeholder="Посилання на соц.мережу"><br>
+          </div>
+
+          <div class="leftdiv">
+            <label>Електронна пошта</label><br>
+            <input style="font-size: 20px" type="email" placeholder="Ел. пошта"><br>
+          </div>
+
+          <div class="leftdiv">
+            <label>Пароль</label><br>
+            <input style="font-size: 20px" type="password" placeholder="Пароль"><br>
+          </div>
+
+          <div class="leftdiv">
+            <input class="checkbox" type="checkbox"><a> Чи згідні Ви з умовами?</a><br>
+          </div>
+
+          <div class="leftdiv">
+            <button style="font-size: 20px; margin-top: 30px; padding: 5px 25px; position: absolute; bottom: 0;">
+              Відміна
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </form>
+</section>
+
+<section style="position: absolute; left: 100px; bottom: 0; width: 100%; height: 80px;">
+  <table style="background-color: royalblue">
+    <tr>
+      <td style="font-size: 20px">
+        <p>Посилання на соц.мережі: </p>
+      </td>
+      <td>
+        <img src="telegram.png" style="border-radius: 20px; width: 40px; height: 40px">
+      </td>
+      <td>
+        <img src="inst.png" style="border-radius: 20px; width: 40px; height: 40px">
+      </td>
+      <td>
+        <img src="gmail.png" style="border-radius: 20px; width: 40px; height: 40px">
+      </td>
+    </tr>
+  </table>
+</section>
+
+</body>
+</html>
