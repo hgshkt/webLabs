@@ -2,6 +2,21 @@
 <html lang="en">
 <style>
 
+    nav {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    li {
+        display: inline;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 auto;
+    }
+
     .info_table {
         width: 75%;
         display: flex;
@@ -27,6 +42,7 @@
         padding: 20px;
         border: 2px solid black;
         position: relative;
+        box-sizing: content-box;
     }
 
     .table_value {
@@ -36,18 +52,41 @@
         size: 34px;
     }
 
-    .table {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        border-collapse: collapse;
-    }
-
     .hrefs_table_sell {
         border: 2px solid black;
         padding: 5px 15px;
         font-size: 30px;
         text-align: center;
+    }
+
+    .round_img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .soc_section {
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+    }
+
+    .z_img {
+        position: absolute;
+        width: 320px;
+        height: 320px;
+    }
+
+    .none_float_img {
+        float: none;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 5px 10px 10px;
     }
 </style>
 <head>
@@ -56,6 +95,25 @@
 </head>
 <body>
 
+<section>
+    <nav>
+        <ul>
+            <li class="hrefs_table_sell">
+                <a class="table_value" href="main.html">Головна</a>
+            </li>
+            <li class="hrefs_table_sell">
+                <a class="table_value" href="registration.html">Форма реєстрації</a>
+            </li>
+            <li class="hrefs_table_sell">
+                <a class="table_value" href="login.html">Форма входу</a>
+            </li>
+            <li class="hrefs_table_sell">
+                <a class="table_value" href="feedback.html">Форма зворотнього зв'язку</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+
 <div class="header">
     Лабораторна робота №2. Виконавець: Ілендзеєр Артем Олександрович ТР-12
 </div>
@@ -63,7 +121,7 @@
 <section>
     <table class="info_table">
         <tr style="height: 600px">
-            <td class="info" style="padding-bottom: 150px; box-sizing: content-box; width: 60%;">
+            <td class="info" style="padding-bottom: 150px; width: 60%;">
                 <img style="float: left; width: 120px; height: 120px;" src="1.jpg">
                 <img style="float: right; width: 120px; height: 120px; position: relative; margin-bottom: 15px"
                      src="1.jpg">
@@ -74,58 +132,40 @@
                 інформацією. Текст з інформацією. Текст з інформацією. Текст з інформацією. Текст з інформацією. Текст з
                 інформацією. Текст з інформацією. Текст з інформацією. Текст з інформацією. Текст з інформацією. Текст з
                 інформацією. Текст з інформацією. Текст з інформацією.
-                <img style="float: none; width: 120px; height: 120px; position: absolute; bottom: 0; left: 0; padding: 0 5px 10px 10px;"
+                <img class="none_float_img"
                      src="1.jpg">
             </td>
-            <td class="info" style="box-sizing: content-box; width: 40%;">
-                <img style="position: absolute; z-index: 1; left: 40px; top: 40px; width: 320px; height: 320px;"
-                     src="1.jpg">
-                <img style="position: absolute; z-index: 2; left: 80px; top: 80px; width: 320px; height: 320px;"
-                     src="1.jpg">
-                <img style="position: absolute; z-index: 3; left: 120px; top: 120px; width: 320px; height: 320px;"
-                     src="1.jpg">
-                <img style="position: absolute; z-index: 4; left: 160px; top: 160px; width: 320px; height: 320px;"
-                     src="1.jpg">
-                <img style="position: absolute; z-index: 5; left: 200px; top: 200px; width: 320px; height: 320px;"
-                     src="1.jpg">
+            <td class="info" style="width: 40%;">
+                <img class="z_img" style="z-index: 1; left: 40px; top: 40px;" src="1.jpg" alt="1">
+                <img class="z_img" style="z-index: 2; left: 80px; top: 80px;" src="1.jpg" alt="1">
+                <img class="z_img" style="z-index: 3; left: 120px; top: 120px;" src="1.jpg" alt="1">
+                <img class="z_img" style="z-index: 4; left: 160px; top: 160px;" src="1.jpg" alt="1">
+                <img class="z_img" style="z-index: 5; left: 200px; top: 200px;" src="1.jpg" alt="1">
             </td>
         </tr>
     </table>
 </section>
 
-<section style="position: absolute; top: 0; width: 100%">
-    <table class="table">
-        <tr>
-            <td class="hrefs_table_sell">
-                <a class="table_value" href="main.html">Головна</a>
-            </td>
-            <td class="hrefs_table_sell">
-                <a class="table_value" href="registration.html">Форма реєстрації</a>
-            </td>
-            <td class="hrefs_table_sell">
-                <a class="table_value" href="login.html">Форма входу</a>
-            </td>
-            <td class="hrefs_table_sell">
-                <a class="table_value" href="feedback.html">Форма зворотнього зв'язку</a>
-            </td>
-        </tr>
-    </table>
-</section>
-
-<section style="position: absolute; left: 100px; bottom: 0; width: 100%; height: 80px;">
+<section class="soc_section">
     <table style="background-color: royalblue">
         <tr>
             <td style="font-size: 20px">
                 <p>Посилання на соц.мережі: </p>
             </td>
             <td>
-                <img src="telegram.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="web.telegram.org/k/#@higashikata1116">
+                    <img src="telegram.png" class="round_img" alt="telegram">
+                </a>
             </td>
             <td>
-                <img src="inst.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="https://github.com/hgshkt?tab=repositories&q=&type=public&language=&sort=">
+                    <img src="github.png" class="round_img" alt="github">
+                </a>
             </td>
             <td>
-                <img src="gmail.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="mailto:azazaz.com84@gmail.com">
+                    <img src="gmail.png" class="round_img" alt="gmail">
+                </a>
             </td>
         </tr>
     </table>

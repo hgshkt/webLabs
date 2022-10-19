@@ -2,18 +2,26 @@
 <html lang="en">
 
 <style>
+    nav {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    li {
+        display: inline;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 auto;
+    }
+
     .table_value {
         text-align: center;
         color: black;
         text-decoration: none;
         size: 34px;
-    }
-
-    .table {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        border-collapse: collapse;
     }
 
     .hrefs_table_sell {
@@ -47,6 +55,47 @@
         width: 100%;
         font-size: 25px;
     }
+
+    .round_img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .soc_section {
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+    }
+
+    .text_area {
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        position: absolute;
+    }
+
+    .feedback_input {
+        border: 2px solid black;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .feedback_table {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .feedback_td {
+        width: 30%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 </style>
 
 <head>
@@ -55,41 +104,38 @@
 </head>
 <body>
 
-<section style="position: absolute; top: 0; width: 100%">
-    <table class="table">
-        <tr>
-            <td class="hrefs_table_sell">
+<section>
+    <nav>
+        <ul>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="main.html">Головна</a>
-            </td>
-            <td class="hrefs_table_sell">
+            </li>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="registration.html">Форма реєстрації</a>
-            </td>
-            <td class="hrefs_table_sell">
+            </li>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="login.html">Форма входу</a>
-            </td>
-            <td class="hrefs_table_sell">
+            </li>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="feedback.html">Форма зворотнього зв'язку</a>
-            </td>
-        </tr>
-    </table>
+            </li>
+        </ul>
+    </nav>
 </section>
 
 <section class="feedback_section">
-    <table style="width: 80%; margin-left: auto; margin-right: auto; position: relative">
+    <table class="feedback_table">
         <tr style="height: 100%">
-            <td style="width: 30%; padding-top: 40px; padding-bottom: 40px;">
+            <td class="feedback_td">
                 <div style="width: 100%">
                     <div class="input_text">
-                        <input style="border: 2px solid black; width: 100%; font-size: 30px;" placeholder="Ім'я"
-                               type="text">
+                        <input class="feedback_input" placeholder="Ім'я" type="text">
                     </div>
                     <div class="input_text">
-                        <input style="border: 2px solid black; width: 100%; font-size: 30px;" placeholder="Ел. пошта"
-                               type="email">
+                        <input class="feedback_input" placeholder="Ел. пошта" type="email">
                     </div>
                     <div class="input_text">
-                        <input style="border: 2px solid black; width: 100%; font-size: 30px;" placeholder="Тема"
-                               type="text">
+                        <input class="feedback_input" placeholder="Тема" type="text">
                     </div>
                     <div class="input_text">
                         <button class="btn">
@@ -99,26 +145,32 @@
                 </div>
             </td>
             <td style="position: relative">
-                <textarea style="top:10px; bottom:10px; left: 10px; right: 10px; position:absolute;"></textarea>
+                <textarea class="text_area"></textarea>
             </td>
         </tr>
     </table>
 </section>
 
-<section style="position: absolute; left: 100px; bottom: 0; width: 100%; height: 80px;">
+<section class="soc_section">
     <table style="background-color: royalblue">
         <tr>
             <td style="font-size: 20px">
                 <p>Посилання на соц.мережі: </p>
             </td>
             <td>
-                <img src="telegram.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="web.telegram.org/k/#@higashikata1116">
+                    <img src="telegram.png" class="round_img" alt="telegram">
+                </a>
             </td>
             <td>
-                <img src="inst.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="https://github.com/hgshkt?tab=repositories&q=&type=public&language=&sort=">
+                    <img src="github.png" class="round_img" alt="github">
+                </a>
             </td>
             <td>
-                <img src="gmail.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="mailto:azazaz.com84@gmail.com">
+                    <img src="gmail.png" class="round_img" alt="gmail">
+                </a>
             </td>
         </tr>
     </table>

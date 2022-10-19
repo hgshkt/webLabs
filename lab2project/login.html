@@ -2,6 +2,21 @@
 <html lang="en">
 
 <style>
+    nav {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    li {
+        display: inline;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 auto;
+    }
+
     .table_value {
         text-align: center;
         color: black;
@@ -63,6 +78,26 @@
         width: 100%;
         font-size: 25px;
     }
+
+    .round_img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .soc_section {
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+    }
+
+    .login_input {
+        border: 2px solid black;
+        width: 100%;
+        font-size: 30px;
+    }
 </style>
 
 <head>
@@ -71,32 +106,32 @@
 </head>
 <body>
 
-<section style="position: absolute; top: 0; width: 100%">
-    <table class="table">
-        <tr>
-            <td class="hrefs_table_sell">
+<section>
+    <nav>
+        <ul>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="main.html">Головна</a>
-            </td>
-            <td class="hrefs_table_sell">
+            </li>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="registration.html">Форма реєстрації</a>
-            </td>
-            <td class="hrefs_table_sell">
+            </li>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="login.html">Форма входу</a>
-            </td>
-            <td class="hrefs_table_sell">
+            </li>
+            <li class="hrefs_table_sell">
                 <a class="table_value" href="feedback.html">Форма зворотнього зв'язку</a>
-            </td>
-        </tr>
-    </table>
+            </li>
+        </ul>
+    </nav>
 </section>
 
 <section class="login_section">
     <p class="header">Форма входу:</p>
     <div class="input_text">
-        <input style="border: 2px solid black; width: 100%; font-size: 30px;" placeholder="Логін" type="text">
+        <input class="login_input" placeholder="Логін" type="text">
     </div>
     <div class="input_text">
-        <input style="border: 2px solid black; width: 100%; font-size: 30px;" placeholder="Пароль" type="text">
+        <input class="login_input" placeholder="Пароль" type="text">
     </div>
     <div class="div_btn">
         <button class="btn">
@@ -105,24 +140,29 @@
     </div>
 </section>
 
-<section style="position: absolute; left: 100px; bottom: 0; width: 100%; height: 80px;">
+<section class="soc_section">
     <table style="background-color: royalblue">
         <tr>
             <td style="font-size: 20px">
                 <p>Посилання на соц.мережі: </p>
             </td>
             <td>
-                <img src="telegram.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="web.telegram.org/k/#@higashikata1116">
+                    <img src="telegram.png" class="round_img" alt="telegram">
+                </a>
             </td>
             <td>
-                <img src="inst.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="https://github.com/hgshkt?tab=repositories&q=&type=public&language=&sort=">
+                    <img src="github.png" class="round_img" alt="github">
+                </a>
             </td>
             <td>
-                <img src="gmail.png" style="border-radius: 20px; width: 40px; height: 40px">
+                <a href="mailto:azazaz.com84@gmail.com">
+                    <img src="gmail.png" class="round_img" alt="gmail">
+                </a>
             </td>
         </tr>
     </table>
 </section>
-
 </body>
 </html>
