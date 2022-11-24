@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+
+    @media screen and (min-width: 320px) {
+
+        #div1 {
+            height: 60px;
+        }
+
+        #div1 > div {
+            padding: 2px 2px;
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+
+        #logo_div > p {
+            padding: 4px;
+            font-size: 16px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        #links > div {
+            font-size: 14px;
+            padding: 4px;
+        }
+
+        #div2 {
+            height: 650px;
+            width: 100%;
+        }
+
+        #div2 > div {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+        }
+
+
+        #div2 > div > div > div {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        #left_text {
+            color: darkgrey;
+            font-size: 12px;
+        }
+
+        #line {
+            height: 2px;
+            width: 60px;
+            margin: 20px 20px 20px 40px;
+        }
+
+        #div2_left  {
+            padding: 10px;
+        }
+
+        #logo_left {
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        #download_button {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        #div2_right  {
+            margin: 20px;
+        }
+
+        #div2_right > div {
+            margin-top: 40px;
+            margin-bottom: 60px;
+            border-radius: 6px;
+        }
+
+        #right_div_text {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        #input1 {
+            font-size: 14px;
+            margin: 0px;
+        }
+
+        #input2 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #input3 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #get_started {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 10px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        #div3 {
+            gap: 30px;
+            padding: 10px;
+        }
+
+        #div3 > div > img {
+            width: 100%;
+        }
+
+        #img_div {
+            width: 50%;
+            display: none;
+            align-items: center;
+        }
+
+        #tabs {
+            border-radius: 8px;
+        }
+
+        #tab1 {
+            font-size: 14px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: orange;
+        }
+
+        #tab2 {
+            font-size: 14px;
+        }
+
+        #tab3 {
+            font-size: 14px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .tab {
+            padding: 24px;
+        }
+
+        #center_div {
+            width: 100%;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        #center_text_1 {
+            width: 200px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #center_text_2 {
+            font-size: 12px;
+            color: darkgrey;
+        }
+
+        #center_text_3 {
+            font-size: 12px;
+            color: darkgrey;
+        }
+
+        #button {
+            border-radius: 4px;
+            padding: 10px 16px;
+            font-size: 14px;
+        }
+
+        #div4 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        #div4_1 {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .div5 {
+            height: 2px;
+            margin-top: 8px;
+            width: 6%;
+            margin-left: 47%;
+            margin-right: 47%;
+        }
+
+        #div6 {
+            font-size: 14px;
+            margin: 20px;
+        }
+
+        #div6_1 {
+            font-size: 12px;
+            margin: 10px;
+        }
+
+        .div7 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #div7 {
+            height: 420px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #div7 > div {
+            font-size: 16px;
+        }
+
+        #div7 > div > div {
+            padding: 10px;
+        }
+
+        #avatar1 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #avatar2 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #avatar3 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #name1 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #name2 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #name3 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #post1 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #post2 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #post3 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #send_message {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 10px 30%;
+        }
+
+        #bar {
+            height: 50px;
+        }
+
+        #contacts {
+            margin-top: 20px;
+        }
+
+        #themes {
+            font-size: 10px;
+        }
+
+        #contacts > div > img {
+            width: 30px;
+        }
+
+        #message {
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            height: 150px;
+            width: 100px;
+        }
+
+        #div8 > div > div > input {
+            width: 400px;
+            height: 40px;
+        }
+
+        #div8 > div > input {
+            width: 400px;
+        }
+    }
+
+    @media screen and (min-width: 480px) {
+
+
+        #div1 {
+            height: 60px;
+        }
+
+        #div1 > div {
+            padding: 2px 2px;
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+
+        #logo_div > p {
+            padding: 4px;
+            font-size: 12px;
+            margin-right: 55px;
+            margin-left: 5px;
+        }
+
+        #links > div {
+            font-size: 14px;
+            padding: 4px;
+        }
+
+        #div2 {
+            height: 560px;
+            width: 100%;
+        }
+
+        #div2 > div {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+        }
+
+
+        #div2 > div > div > div {
+            font-size: 20px;
+            padding: 0px;
+            margin: 10px;
+        }
+
+        #left_text {
+            color: darkgrey;
+            font-size: 12px;
+        }
+
+        #line {
+            height: 2px;
+            width: 60px;
+            margin: 20px 20px 20px 40px;
+        }
+
+        #div2_left  {
+            padding: 10px;
+        }
+
+        #logo_left {
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        #download_button {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        #div2_right  {
+            margin: 20px;
+        }
+
+        #div2_right > div {
+            margin-top: 40px;
+            margin-bottom: 60px;
+            border-radius: 6px;
+        }
+
+        #right_div_text {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        #input1 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #input2 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #input3 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #get_started {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 10px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        #div3 {
+            gap: 30px;
+            padding: 40px;
+        }
+
+        #div3 > div > img {
+            width: 100%;
+        }
+
+        #img_div {
+            width: 50%;
+            display: none;
+            align-items: center;
+        }
+
+        #tabs {
+            border-radius: 8px;
+        }
+
+        #tab1 {
+            font-size: 14px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: orange;
+        }
+
+        #tab2 {
+            font-size: 14px;
+        }
+
+        #tab3 {
+            font-size: 14px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .tab {
+            padding: 24px;
+        }
+
+        #center_div {
+            width: 100%;
+            padding: 6px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #center_text_1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #center_text_2 {
+            font-size: 12px;
+            color: darkgrey;
+        }
+
+        #center_text_3 {
+            font-size: 12px;
+            color: darkgrey;
+        }
+
+        #button {
+            border-radius: 4px;
+            padding: 10px 16px;
+            font-size: 14px;
+        }
+
+        #div4 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        #div4_1 {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .div5 {
+            height: 2px;
+            margin-top: 8px;
+            width: 6%;
+            margin-left: 47%;
+            margin-right: 47%;
+        }
+
+        #div6 {
+            font-size: 14px;
+            margin: 20px;
+        }
+
+        #div6_1 {
+            font-size: 12px;
+            margin: 10px;
+        }
+
+        .div7 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #div7 {
+            height: 580px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #div7 > div {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        #div7 > div > div {
+            padding: 20px;
+        }
+
+        #avatar1 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #avatar2 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #avatar3 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #name1 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #name2 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #name3 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #post1 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #post2 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #post3 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #send_message {
+            padding: 10px;
+            font-size: 12px;
+            border-radius: 5px;
+            margin: 20px 40%;
+        }
+
+        #bar {
+            height: 50px;
+        }
+
+        #contacts {
+            margin-top: 20px;
+        }
+
+        #themes {
+            font-size: 10px;
+        }
+
+        #contacts > div > img {
+            width: 30px;
+        }
+
+        #message {
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        #div8 > div > div > input {
+            width: 400px;
+            height: 40px;
+        }
+
+        #div8 > div > input {
+            width: 400px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+
+        #div1 {
+            height: 50px;
+        }
+
+        #div1 > div {
+            padding: 10px 10px;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        #logo_div > p {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 55px;
+            margin-left: 5px;
+        }
+
+        #links > div {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        #div2 {
+            height: 400px;
+        }
+
+        #div2 > div {
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+        }
+
+        #left_text {
+            color: darkgrey;
+            font-size: 26px;
+        }
+
+        #line {
+            height: 2px;
+            width: 60px;
+            margin: 20px 20px 20px 40px;
+        }
+
+        #div2_left  {
+            padding: 10px;
+        }
+
+        #logo_left {
+            font-size: 26px;
+            margin-left: 20px;
+        }
+
+        #download_button {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        #div2_right  {
+            margin: 20px;
+        }
+
+        #div2_right > div {
+            margin-top: 40px;
+            margin-bottom: 60px;
+            border-radius: 6px;
+        }
+
+        #right_div_text {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        #input1 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #input2 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #input3 {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        #get_started {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 10px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        #div3 {
+            gap: 30px;
+            padding: 40px;
+        }
+
+        #div3 > div > img {
+            width: 100%;
+        }
+
+        #img_div {
+            width: 50%;
+            display: none;
+            align-items: center;
+        }
+
+        #tabs {
+            border-radius: 8px;
+        }
+
+        #tab1 {
+            font-size: 14px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: orange;
+        }
+
+        #tab2 {
+            font-size: 14px;
+        }
+
+        #tab3 {
+            font-size: 14px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .tab {
+            padding: 24px;
+        }
+
+        #center_div {
+            width: 100%;
+            padding: 6px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #center_text_1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #center_text_2 {
+            font-size: 12px;
+            color: darkgrey;
+        }
+
+        #center_text_3 {
+            font-size: 12px;
+            color: darkgrey;
+        }
+
+        #button {
+            border-radius: 4px;
+            padding: 10px 16px;
+            font-size: 14px;
+        }
+
+        #div4 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        #div4_1 {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .div5 {
+            height: 2px;
+            margin-top: 8px;
+            width: 6%;
+            margin-left: 47%;
+            margin-right: 47%;
+        }
+
+        #div6 {
+            font-size: 14px;
+            margin: 20px;
+        }
+
+        #div6_1 {
+            font-size: 12px;
+            margin: 10px;
+        }
+
+        #div7 {
+            height: 300px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #div7 > div {
+            font-size: 16px;
+            padding: 20px;
+        }
+
+        #div7 > div > div {
+            padding: 20px;
+        }
+
+        #avatar1 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #avatar2 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #avatar3 {
+            height: 40px;
+            width: 40px;
+        }
+
+        #name1 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #name2 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #name3 {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        #post1 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #post2 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #post3 {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        #send_message {
+            padding: 10px;
+            font-size: 12px;
+            border-radius: 5px;
+            margin: 20px 40%;
+        }
+
+        #bar {
+            height: 50px;
+        }
+
+        #contacts {
+            margin-top: 20px;
+        }
+
+        #themes {
+            font-size: 10px;
+        }
+
+        #contacts > div > img {
+            width: 30px;
+        }
+
+        #message {
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            height: 200px;
+            width: 400px;
+        }
+
+        #div8 > div > div > input {
+            width: 400px;
+            height: 40px;
+        }
+
+        #div8 > div > input {
+            width: 400px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        #div1 {
+            height: 70px;
+        }
+
+        #div1 > div {
+            padding: 10px 10px;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        #logo_div > p {
+            padding: 10px;
+            font-size: 20px;
+            margin-right: 55px;
+            margin-left: 5px;
+        }
+
+        #links > div {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        #div2 {
+            height: 500px;
+            padding: 60px 22px;
+        }
+
+        #div2 > div {
+            display: flex;
+            height: 600px;
+            padding: 60px 22px;
+        }
+
+        #left_text {
+            color: darkgrey;
+            font-size: 20px;
+        }
+
+        #line {
+            height: 2px;
+            width: 60px;
+            margin: 20px 20px 20px 40px;
+        }
+
+        #div2_left  {
+            padding: 20px;
+        }
+
+        #logo_left {
+            font-size: 60px;
+        }
+
+        #download_button {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        #div2_right  {
+            margin: 20px;
+        }
+
+        #div2_right > div {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            border-radius: 6px;
+        }
+
+        #right_div_text {
+            font-size: 30px;
+            margin: 30px;
+        }
+
+        #input1 {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        #input2 {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        #input3 {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        #get_started {
+            font-size: 30px;
+            padding: 14px;
+            margin-top: 10px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        #div3 {
+            gap: 50px;
+            padding: 60px;
+        }
+
+        #div3 > div > img {
+            width: 100%;
+        }
+
+        #img_div {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        #tabs {
+            border-radius: 8px;
+        }
+
+        #tab1 {
+            font-size: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: orange;
+        }
+
+        #tab2 {
+            font-size: 20px;
+        }
+
+        #tab3 {
+            font-size: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .tab {
+            padding: 48px;
+        }
+
+        #center_div {
+            width: 100%;
+            padding: 10px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #center_text_1 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        #center_text_2 {
+            font-size: 16px;
+            color: darkgrey;
+        }
+
+        #center_text_3 {
+            font-size: 16px;
+            color: darkgrey;
+        }
+
+        #button {
+            border-radius: 4px;
+            padding: 14px 20px;
+            font-size: 20px;
+        }
+
+        #div4 {
+            font-size: 30px;
+            margin-top: 100px;
+        }
+
+        #div4_1 {
+            font-size: 40px;
+            margin-top: 50px;
+        }
+
+        .div5 {
+            height: 2px;
+            margin-top: 8px;
+            width: 6%;
+            margin-left: 47%;
+            margin-right: 47%;
+        }
+
+        #div6 {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        #div6_1 {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        #div7 {
+            height: 450px;
+        }
+
+        #div7 {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        #div7 > div {
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        #div7 > div > div {
+            padding: 30px;
+        }
+
+        #avatar1 {
+            height: 70px;
+            width: 70px;
+        }
+
+        #avatar2 {
+            height: 70px;
+            width: 70px;
+        }
+
+        #avatar3 {
+            height: 70px;
+            width: 70px;
+        }
+
+        #name1 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #name2 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #name3 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #post1 {
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #post2 {
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #post3 {
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #send_message {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin: 70px 40%;
+        }
+
+        #bar {
+            height: 74px;
+        }
+
+        #contacts {
+            margin: 20px;
+        }
+
+        #message {
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            height: 200px;
+            width: 400px;
+        }
+
+        #div8 > div > div > input {
+            width: 400px;
+            height: 40px;
+        }
+
+        #div8 > div > input {
+            width: 400px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        #div1 > div {
+            padding: 10px 10px;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        #logo_div > p {
+            padding: 10px;
+            font-size: 30px;
+            margin-right: 55px;
+            margin-left: 5px;
+        }
+
+        #links > div {
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        #div2 {
+            height: 600px;
+            padding: 60px 22px;
+        }
+
+        #div2 > div {
+            display: flex;
+            height: 600px;
+            padding: 60px 22px;
+        }
+
+        #div2 > div > div > div {
+            font-size: 30px;
+            padding: 0px;
+            margin: 10px;
+        }
+
+        #div2_left > div {
+            padding: 20px;
+        }
+
+        #logo_left {
+            font-size: 50px;
+        }
+
+        #line {
+            height: 2px;
+            width: 60px;
+            margin: 20px 20px 20px 40px;
+        }
+
+        #logo_left {
+            font-size: 80px;
+        }
+
+        #download_button {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        #div2_right > div {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            border-radius: 6px;
+        }
+
+        #right_div_text {
+            font-size: 40px;
+            margin: 30px;
+        }
+
+        #input1 {
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        #input2 {
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        #input3 {
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        #get_started {
+            font-size: 30px;
+            padding: 14px;
+            margin-top: 10px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        #div3 {
+            gap: 30px;
+            padding: 60px;
+        }
+
+        #div3 > div > img {
+            align-self: center;
+            width: 100%;
+        }
+
+        #img_div {
+            width: 50%;
+        }
+
+        #tabs {
+            border-radius: 8px;
+        }
+
+        #tab1 {
+            font-size: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: orange;
+        }
+
+        #tab2 {
+            font-size: 20px;
+        }
+
+        #tab3 {
+            font-size: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .tab {
+            padding: 48px;
+        }
+
+        #center_div {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #center_text_1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #center_text_2 {
+            font-size: 20px;
+            color: darkgrey;
+        }
+
+        #center_text_3 {
+            font-size: 20px;
+            color: darkgrey;
+        }
+
+        #button {
+            border-radius: 4px;
+            padding: 14px 20px;
+            font-size: 30px;
+        }
+
+        #div4 {
+            font-size: 60px;
+            margin-top: 200px;
+        }
+
+        #div4_1 {
+            font-size: 60px;
+            margin-top: 200px;
+        }
+
+        #div6 {
+            font-size: 30px;
+            margin: 30px;
+        }
+
+        #div6_1 {
+            font-size: 30px;
+            margin: 30px;
+        }
+
+        #div7 {
+            height: 450px;
+            /*padding: 40px;*/
+        }
+
+        #div7 > div {
+            font-size: 30px;
+            /*padding: 30px;*/
+        }
+
+        #div7 > div > div {
+            /*padding: 20px;*/
+        }
+
+        #avatar1 {
+            height: 100px;
+            width: 100px;
+        }
+
+        #avatar2 {
+            height: 100px;
+            width: 100px;
+        }
+
+        #avatar3 {
+            height: 100px;
+            width: 100px;
+        }
+
+        #name1 {
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        #name2 {
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        #name3 {
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        #post1 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #post2 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #post3 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #send_message {
+            padding: 20px;
+            font-size: 30px;
+            border-radius: 6px;
+            margin: 90px 40%;
+        }
+
+        #bar {
+            height: 80px;
+        }
+
+        #contacts {
+            margin: 20px;
+        }
+
+        #message {
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            height: 200px;
+            width: 400px;
+        }
+
+        #div8 > div > div > input {
+            width: 400px;
+            height: 40px;
+        }
+
+        #div8 > div > input {
+            width: 400px;
+        }
+    }
+
+    .div1 {
+        width: 100%;
+        display: flex;
+        background-color: black;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .div1 > div {
+        color: white;
+        display: flex;
+    }
+
+    .logo {
+        font-weight: bold;
+    }
+
+    .div2 {
+        background-image: url("image1.jpg");
+        background-size: cover;
+    }
+
+    .div2 > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    .div2 > div > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo_left {
+        color: white;
+    }
+
+    .line {
+        background-color: white;
+    }
+
+    .download_button {
+        border-color: white;
+        border-style: solid;
+        color: white;
+    }
+
+    .div2_right {
+        text-align: center;
+    }
+
+    .div2_right > div {
+        background-color: white;
+        display: inline-block;
+    }
+
+    .get_started {
+        background-color: orange;
+        color: white;
+    }
+
+    .div3 {
+        display: flex;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .tab {
+        background-color: black;
+        border-color: darkgrey;
+        border-style: solid;
+        color: white;
+        height: auto;
+    }
+
+    .button_container {
+        display: flex;
+        align-items: start;
+    }
+
+    .button {
+        background-color: orange;
+        color: white;
+    }
+
+    .div4 {
+        text-align: center;
+    }
+
+    .div5 {
+        background-color: orange;
+    }
+
+    .div6 {
+        color: darkgrey;
+        text-align: center;
+    }
+
+    .div7 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .div7 > div > div {
+        display: flex;
+    }
+
+    .div8 {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+
+    .div8 > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .avatar {
+        border-radius: 100%;
+    }
+
+    .name {
+        font-weight: bold;
+    }
+
+    .post {
+        color: darkgrey;
+    }
+
+    .send_message {
+        background-color: orange;
+        color: white;
+        text-align: center;
+    }
+
+    .bar {
+        background-color: black;
+        color: white;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bar > div {
+        color: darkgrey;
+        text-align: center;
+    }
+
+
+</style>
+
+<body>
+
+<div class="div1" id="div1">
+    <div id="logo_div">
+        <p class="logo" id="logo">AX
+            <d style="color: orange;">IT</d>
+        </p>
+    </div>
+    <div id="links">
+        <div>Features</div>
+        <div>About</div>
+        <div>Pricing</div>
+        <div>Reviews</div>
+        <div>Contact</div>
+    </div>
+</div>
+
+<div class="div2" id="div2">
+    <div>
+        <div class="div2_left" id="div2_left">
+            <p class="logo_left" id="logo_left">AX
+                <d style="color: orange;">IT</d>
+            </p>
+            <div style="color: white;">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</div>
+            <div class="line" id="line"></div>
+            <div id="left_text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean euismod bibendum'laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+            </div>
+            <div style="padding: 20px">
+                <d class="download_button" id="download_button">Download</d>
+            </div>
+        </div>
+
+        <div class="div2_right" id="div2_right">
+            <div>
+                <p id="right_div_text">Try Your
+                    <d style="color: orange;">FREE</d>
+                    Trial Today
+                </p>
+                <div><input type="text" placeholder="Name" id="input1"></div>
+                <div><input type="text" placeholder="Email" id="input2"></div>
+                <div><input type="text" placeholder="Password" id="input3"></div>
+                <div class="get_started" id="get_started">Get started</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="div3" id="div3">
+    <div class="tabs" id="tabs">
+        <div class="tab" id="tab1">Tab1</div>
+        <div class="tab" id="tab2">Tab2</div>
+        <div class="tab" id="tab3">Tab3</div>
+    </div>
+
+    <div id="center_div">
+        <div id="center_text_1"><p>Tabs with soft transitioning effect.</p></div>
+        <div id="center_text_2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus acumsan et viverra justo commando.
+            Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+        </div>
+        <div id="center_text_3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet.</p>
+        </div>
+        <div class="button_container">
+            <div class="button" id="button">Download</div>
+        </div>
+    </div>
+    <div id="img_div">
+        <img src="image2.jpg">
+    </div>
+</div>
+
+<div class="div4" id="div4">
+    WHAT OUR CUSTOMERS ARE SAYING
+</div>
+
+<div class="div5"></div>
+
+<div class="div6" id="div6">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<div class="div7" id="div7">
+    <div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque quo suscipt.
+        </div>
+
+        <div>
+            <div><img class="avatar" src="image1.jpg" id="avatar1"></div>
+            <div>
+                <div class="name" id="name1">
+                    Jeremy H.
+                </div>
+                <div class="post" id="post1">
+                    Manager
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque quo suscipt.
+        </div>
+
+        <div>
+            <div><img class="avatar" src="image1.jpg" id="avatar2"></div>
+            <div>
+                <div class="name" id="name2">
+                    Jhon S.
+                </div>
+                <div class="post" id="post2">
+                    Freelancer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque quo suscipt.
+        </div>
+
+        <div>
+            <div><img class="avatar" src="image1.jpg" id="avatar3"></div>
+            <div>
+                <div class="name" id="name3">
+                    Susan W.
+                </div>
+                <div class="post" id="post3">
+                    Photographer
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="div4" id="div4_1">
+    CONTACT US
+</div>
+
+<div class="div5"></div>
+
+<div class="div6" id="div6_1">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<div class="send_message" id="send_message">Send Message</div>
+
+<div class="div8">
+    <div>
+        <div><input type="text" placeholder="Name"></div>
+        <div><input type="text" placeholder="Email"></div>
+        <div><input type="text" placeholder="Subject"></div>
+    </div>
+    <div>
+        <textarea id="message" placeholder="Message"></textarea>
+    </div>
+</div>
+
+<div class="bar" id="bar">
+    <div class="contacts" id="contacts">
+        <div><img src="contact1.png"></div>
+        <div><img src="contact2.png"></div>
+        <div><img src="contact3.png"></div>
+        <div><img src="contact4.png"></div>
+        <div><img src="contact5.png"></div>
+        <div><img src="contact6.png"></div>
+        <div><img src="contact7.png"></div>
+    </div>
+    <div id="themes">@ Axure Themes</div>
+</div>
+
+</body>
+</html>
